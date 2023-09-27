@@ -1,14 +1,21 @@
-import textwrap
-
-def zerosAndOnes(name):
+def stringy(name):
   term = 0 
+  global output
+  output = []
   while len(name) > term:
     term += 1
     if term % 2:
-      print("0")
+      output.append("1")
 
     else: 
-      print("1")
+      output.append("0")
+  display()
+  
+def display():
+  secondTerm = 0
+  while len(output) > secondTerm:
+    print(output[secondTerm] , end="")
+    secondTerm+=1
 
 
-zerosAndOnes("Ahron")
+stringy("Ahron")
