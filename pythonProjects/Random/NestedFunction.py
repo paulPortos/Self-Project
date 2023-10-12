@@ -12,5 +12,3 @@ def number1():
   x = computation(0)
   print(x)
   
-number1()
-
